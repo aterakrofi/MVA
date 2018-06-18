@@ -15,9 +15,13 @@ namespace _2._1_Variables
             string myFirstName;
             myFirstName = Console.ReadLine();
 
-            string myLastName;
-            Console.Write("Type your last name: ");
-            myLastName = Console.ReadLine();
+            //string myLastName;   // camelcase
+            //Console.Write("Type your last name: ");  ---------> wordy
+            //myLastName = Console.ReadLine();
+
+            //Declaring variables as needed reduces long code
+            Console.WriteLine("Type your last name: ");
+            string myLastName = Console.ReadLine();   // initialization
 
             Console.WriteLine("Hello, " + myFirstName + " " + myLastName);
             Console.ReadLine();
